@@ -20,7 +20,7 @@
   
 - [x] Change image and contact of verified tick [ Exclusively on Raganork ]
 
-- [x] .forward option (Exclusively on Raganork 🥳)
+- [x] .forward option (Exclusively on romeo 🥳)
 
 - [x] Buttons and list added (With your own bot name 🥳)
 
