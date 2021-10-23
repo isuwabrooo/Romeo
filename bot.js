@@ -1,1 +1,523 @@
-var _0x1a1bbc=_0x7c8b;(function(_0x5c3e5f,_0x24ce23){var _0x2dc754=_0x7c8b,_0x3f9601=_0x5c3e5f();while(!![]){try{var _0x5caf4f=parseInt(_0x2dc754(0x12a))/0x1+-parseInt(_0x2dc754(0x12b))/0x2*(-parseInt(_0x2dc754(0x1c1))/0x3)+parseInt(_0x2dc754(0x122))/0x4+-parseInt(_0x2dc754(0x1a8))/0x5*(parseInt(_0x2dc754(0x1b9))/0x6)+-parseInt(_0x2dc754(0x197))/0x7*(parseInt(_0x2dc754(0x1c7))/0x8)+parseInt(_0x2dc754(0x171))/0x9*(-parseInt(_0x2dc754(0x134))/0xa)+parseInt(_0x2dc754(0x195))/0xb;if(_0x5caf4f===_0x24ce23)break;else _0x3f9601['push'](_0x3f9601['shift']());}catch(_0x13a3f5){_0x3f9601['push'](_0x3f9601['shift']());}}}(_0x32b9,0x918a3));const fs=require('fs'),path=require(_0x1a1bbc(0x19e)),events=require('./events'),chalk=require(_0x1a1bbc(0x139)),config=require(_0x1a1bbc(0x1bb)),{WAConnection,MessageOptions,MessageType,Mimetype,Presence}=require(_0x1a1bbc(0x142)),{Message,StringSession,Image,Video}=require('./Raganork/'),{DataTypes}=require(_0x1a1bbc(0x1a9)),{getMessage}=require(_0x1a1bbc(0x182)),axios=require(_0x1a1bbc(0x184)),got=require('got'),WhatsAsenaDB=config[_0x1a1bbc(0x178)][_0x1a1bbc(0x1b7)](_0x1a1bbc(0x16a),{'info':{'type':DataTypes[_0x1a1bbc(0x19a)],'allowNull':![]},'value':{'type':DataTypes[_0x1a1bbc(0x1c8)],'allowNull':![]}});fs[_0x1a1bbc(0x181)](_0x1a1bbc(0x1ba))[_0x1a1bbc(0x14a)](_0x18e703=>{var _0x298a3a=_0x1a1bbc;path[_0x298a3a(0x12c)](_0x18e703)[_0x298a3a(0x14e)]()=='.js'&&require(_0x298a3a(0x1ba)+_0x18e703);});const plugindb=require(_0x1a1bbc(0x175));var OWN={'ff':_0x1a1bbc(0x156)};String[_0x1a1bbc(0x14c)][_0x1a1bbc(0x16d)]=function(){var _0x16b81f=_0x1a1bbc,_0x5d184a=0x0,_0x582a85=arguments;return this[_0x16b81f(0x132)](/{}/g,function(){return typeof _0x582a85[_0x5d184a]!='undefined'?_0x582a85[_0x5d184a++]:'';});};function _0x7c8b(_0x79cf66,_0x5bb5e2){var _0x32b9d8=_0x32b9();return _0x7c8b=function(_0x7c8ba5,_0x330d4f){_0x7c8ba5=_0x7c8ba5-0x11c;var _0x427e68=_0x32b9d8[_0x7c8ba5];return _0x427e68;},_0x7c8b(_0x79cf66,_0x5bb5e2);}!Date[_0x1a1bbc(0x1c9)]&&(Date[_0x1a1bbc(0x1c9)]=function(){return new Date()['getTime']();});Array[_0x1a1bbc(0x14c)][_0x1a1bbc(0x18e)]=function(){var _0x2ec8c9=_0x1a1bbc,_0xa2f2c0,_0x72b743=arguments,_0x4fdcc9=_0x72b743[_0x2ec8c9(0x1a4)],_0x4ac372;while(_0x4fdcc9&&this[_0x2ec8c9(0x1a4)]){_0xa2f2c0=_0x72b743[--_0x4fdcc9];while((_0x4ac372=this[_0x2ec8c9(0x163)](_0xa2f2c0))!==-0x1){this[_0x2ec8c9(0x15b)](_0x4ac372,0x1);}}return this;};async function whatsAsena(){var _0x21abe1=_0x1a1bbc;await config[_0x21abe1(0x178)][_0x21abe1(0x1ab)]();var _0x3daab4=await WhatsAsenaDB[_0x21abe1(0x129)]({'where':{'info':_0x21abe1(0x16e)}});const _0x54f77d=new WAConnection();_0x54f77d[_0x21abe1(0x19b)]=[0x2,0x84e,0xe];const _0x175fdc=new StringSession();_0x54f77d[_0x21abe1(0x153)]['level']=config[_0x21abe1(0x19d)]?'debug':'warn';var _0x3eef87;_0x3daab4[_0x21abe1(0x1a4)]<0x1?(_0x3eef87=!![],_0x54f77d[_0x21abe1(0x130)](_0x175fdc['deCrypt'](config[_0x21abe1(0x187)]))):_0x54f77d['loadAuthInfo'](_0x175fdc['deCrypt'](_0x3daab4[0x0][_0x21abe1(0x1b8)][_0x21abe1(0x1cb)]));_0x54f77d['on'](_0x21abe1(0x14d),async()=>{var _0x4df719=_0x21abe1;console[_0x4df719(0x1b2)](chalk[_0x4df719(0x1b4)][_0x4df719(0x190)]('✅\x20Login\x20information\x20updated!'));const _0x5f57fa=_0x54f77d[_0x4df719(0x133)]();_0x3daab4['length']<0x1?await WhatsAsenaDB[_0x4df719(0x11e)]({'info':_0x4df719(0x16e),'value':_0x175fdc[_0x4df719(0x1a0)](_0x5f57fa)}):await _0x3daab4[0x0][_0x4df719(0x1bf)]({'value':_0x175fdc['createStringSession'](_0x5f57fa)});}),_0x54f77d['on'](_0x21abe1(0x1c3),async()=>{var _0x12a969=_0x21abe1;console[_0x12a969(0x1b2)](''+chalk[_0x12a969(0x154)][_0x12a969(0x1b5)](_0x12a969(0x185))+chalk[_0x12a969(0x196)][_0x12a969(0x1b5)](_0x12a969(0x11c))+'\x0a'+chalk[_0x12a969(0x135)]['bold'](_0x12a969(0x158))+'\x20'+chalk[_0x12a969(0x150)][_0x12a969(0x1b5)](config[_0x12a969(0x157)])+'\x0a\x0a'+chalk[_0x12a969(0x196)][_0x12a969(0x190)](_0x12a969(0x167)));}),_0x54f77d['on'](_0x21abe1(0x166),async()=>{var _0x66a413=_0x21abe1;console[_0x66a413(0x1b2)](chalk[_0x66a413(0x154)]['bold'](_0x66a413(0x131))),console['log'](chalk[_0x66a413(0x1b4)][_0x66a413(0x190)]('⬇️\x20Installing\x20external\x20plugins...'));var _0x59112b=await plugindb[_0x66a413(0x16b)][_0x66a413(0x129)]();_0x59112b[_0x66a413(0x160)](async _0x32b6b3=>{var _0x5250c2=_0x66a413;if(!fs[_0x5250c2(0x128)](_0x5250c2(0x143)+_0x32b6b3[_0x5250c2(0x1b8)][_0x5250c2(0x1af)]+_0x5250c2(0x1bc))){console[_0x5250c2(0x1b2)](_0x32b6b3['dataValues'][_0x5250c2(0x1af)]);var _0x3ed655=await got(_0x32b6b3[_0x5250c2(0x1b8)][_0x5250c2(0x137)]);_0x3ed655[_0x5250c2(0x15e)]==0xc8&&(fs[_0x5250c2(0x172)](_0x5250c2(0x143)+_0x32b6b3[_0x5250c2(0x1b8)]['name']+'.js',_0x3ed655[_0x5250c2(0x1a5)]),require(_0x5250c2(0x143)+_0x32b6b3[_0x5250c2(0x1b8)][_0x5250c2(0x1af)]+_0x5250c2(0x1bc)));}}),console[_0x66a413(0x1b2)](chalk[_0x66a413(0x1b4)][_0x66a413(0x190)](_0x66a413(0x1ac))),fs[_0x66a413(0x181)](_0x66a413(0x1c2))[_0x66a413(0x14a)](_0x938e86=>{var _0x2bd524=_0x66a413;path[_0x2bd524(0x12c)](_0x938e86)[_0x2bd524(0x14e)]()==_0x2bd524(0x1bc)&&require('./plugins/'+_0x938e86);}),console[_0x66a413(0x1b2)](chalk[_0x66a413(0x154)][_0x66a413(0x1b5)](_0x66a413(0x15f))),await new Promise(_0x4197d2=>setTimeout(_0x4197d2,0x44c));if(config[_0x66a413(0x11f)]==_0x66a413(0x1b6))config[_0x66a413(0x138)]=='TR'||config[_0x66a413(0x138)]=='AZ'?_0x54f77d['user'][_0x66a413(0x16c)]===_0x66a413(0x155)?(await _0x54f77d['sendMessage'](_0x54f77d['user']['jid'],_0x66a413(0x161),MessageType[_0x66a413(0x170)]),await new Promise(_0x22db35=>setTimeout(_0x22db35,0x6a4)),console[_0x66a413(0x1b2)](_0x66a413(0x15c)),await heroku[_0x66a413(0x179)](baseURI+_0x66a413(0x1a3))[_0x66a413(0x1b0)](async _0xf5fe88=>{var _0x5a5ac6=_0x66a413;forID=_0xf5fe88[0x0]['id'],await heroku['patch'](baseURI+_0x5a5ac6(0x120)+forID,{'body':{'quantity':0x0}});})):await _0x54f77d['sendMessage'](_0x54f77d[_0x66a413(0x159)][_0x66a413(0x16c)],_0x66a413(0x177),MessageType[_0x66a413(0x170)]):_0x54f77d['user']['jid']===_0x66a413(0x155)?(await _0x54f77d[_0x66a413(0x18f)](_0x54f77d['user']['jid'],_0x66a413(0x17f),MessageType[_0x66a413(0x170)]),await new Promise(_0x3a9126=>setTimeout(_0x3a9126,0x708)),console[_0x66a413(0x1b2)]('🛡️\x20Blacklist\x20Detected\x20🛡️'),await heroku[_0x66a413(0x179)](baseURI+_0x66a413(0x1a3))[_0x66a413(0x1b0)](async _0x49949c=>{var _0x4e1c56=_0x66a413;forID=_0x49949c[0x0]['id'],await heroku[_0x4e1c56(0x15d)](baseURI+_0x4e1c56(0x120)+forID,{'body':{'quantity':0x0}});})):await _0x54f77d[_0x66a413(0x18f)](_0x54f77d[_0x66a413(0x159)]['jid'],_0x66a413(0x177),MessageType[_0x66a413(0x170)]);else{if(config[_0x66a413(0x11f)]==_0x66a413(0x1a1))config[_0x66a413(0x138)]=='TR'||config[_0x66a413(0x138)]=='AZ'?_0x54f77d['user']['jid']===_0x66a413(0x155)?(await _0x54f77d[_0x66a413(0x18f)](_0x54f77d[_0x66a413(0x159)][_0x66a413(0x16c)],_0x66a413(0x145),MessageType[_0x66a413(0x170)]),await new Promise(_0x46dd88=>setTimeout(_0x46dd88,0x708)),console[_0x66a413(0x1b2)](_0x66a413(0x15c)),await heroku[_0x66a413(0x179)](baseURI+_0x66a413(0x1a3))[_0x66a413(0x1b0)](async _0x1c9fb9=>{var _0xd5f337=_0x66a413;forID=_0x1c9fb9[0x0]['id'],await heroku[_0xd5f337(0x15d)](baseURI+_0xd5f337(0x120)+forID,{'body':{'quantity':0x0}});})):await _0x54f77d[_0x66a413(0x18f)](_0x54f77d[_0x66a413(0x159)]['jid'],_0x66a413(0x177),MessageType['text']):_0x54f77d[_0x66a413(0x159)][_0x66a413(0x16c)]===_0x66a413(0x155)?(await _0x54f77d[_0x66a413(0x18f)](_0x54f77d['user'][_0x66a413(0x16c)],_0x66a413(0x17f),MessageType[_0x66a413(0x170)]),await new Promise(_0x5db1dc=>setTimeout(_0x5db1dc,0x708)),console[_0x66a413(0x1b2)](_0x66a413(0x15c)),await heroku[_0x66a413(0x179)](baseURI+_0x66a413(0x1a3))[_0x66a413(0x1b0)](async _0x4d60f8=>{var _0x37ad86=_0x66a413;forID=_0x4d60f8[0x0]['id'],await heroku[_0x37ad86(0x15d)](baseURI+_0x37ad86(0x120)+forID,{'body':{'quantity':0x0}});})):await _0x54f77d[_0x66a413(0x18f)](_0x54f77d[_0x66a413(0x159)][_0x66a413(0x16c)],'*Bot\x20Started*',MessageType['text']);else return console[_0x66a413(0x1b2)](_0x66a413(0x16f));}}),_0x54f77d['on']('chat-update',async _0x40294f=>{var _0x4f4613=_0x21abe1;if(!_0x40294f[_0x4f4613(0x14f)])return;if(!_0x40294f['messages']&&!_0x40294f['count'])return;let _0x4933b1=_0x40294f['messages'][_0x4f4613(0x151)]()[0x0];if(_0x4933b1[_0x4f4613(0x1b3)]&&_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)]==_0x4f4613(0x198))return;config[_0x4f4613(0x147)]&&await _0x54f77d[_0x4f4613(0x1ca)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)],Presence[_0x4f4613(0x14b)]);if(_0x4933b1[_0x4f4613(0x140)]===0x20||_0x4933b1[_0x4f4613(0x140)]===0x1c){var _0x28a808=await getMessage(_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)],'goodbye');if(_0x28a808!==![]){if(_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x1aa)](_0x4f4613(0x15a))){let _0x4470a7;try{_0x4470a7=await _0x54f77d[_0x4f4613(0x11d)](_0x4933b1[_0x4f4613(0x13e)][0x0]);}catch{_0x4470a7=await _0x54f77d[_0x4f4613(0x11d)]();}var _0x5725e4=await _0x54f77d['groupMetadata'](_0x4933b1[_0x4f4613(0x1b3)]['remoteJid']);await axios[_0x4f4613(0x179)](_0x4470a7,{'responseType':_0x4f4613(0x18a)})['then'](async _0x371871=>{var _0x2d3231=_0x4f4613;await _0x54f77d[_0x2d3231(0x18f)](_0x4933b1[_0x2d3231(0x1b3)][_0x2d3231(0x189)],_0x371871[_0x2d3231(0x13d)],MessageType[_0x2d3231(0x173)],{'caption':_0x28a808[_0x2d3231(0x18d)][_0x2d3231(0x132)](_0x2d3231(0x15a),'')[_0x2d3231(0x132)](_0x2d3231(0x18c),_0x5725e4[_0x2d3231(0x152)])[_0x2d3231(0x132)](_0x2d3231(0x1c6),_0x5725e4[_0x2d3231(0x193)])[_0x2d3231(0x132)]('{gpdesc}',_0x5725e4[_0x2d3231(0x125)])[_0x2d3231(0x132)](_0x2d3231(0x191),_0x54f77d[_0x2d3231(0x159)][_0x2d3231(0x1af)])});});}else{if(_0x28a808['message'][_0x4f4613(0x1aa)](_0x4f4613(0x127))){var _0x5725e4=await _0x54f77d['groupMetadata'](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)]),_0x3c5e2f=await axios[_0x4f4613(0x179)](config[_0x4f4613(0x164)],{'responseType':_0x4f4613(0x18a)});await _0x54f77d[_0x4f4613(0x18f)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)],Buffer[_0x4f4613(0x18b)](_0x3c5e2f['data']),MessageType[_0x4f4613(0x148)],{'mimetype':Mimetype[_0x4f4613(0x186)],'caption':_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x132)]('{gif}','')[_0x4f4613(0x132)](_0x4f4613(0x18c),_0x5725e4['subject'])[_0x4f4613(0x132)](_0x4f4613(0x1c6),_0x5725e4[_0x4f4613(0x193)])[_0x4f4613(0x132)]('{gpdesc}',_0x5725e4['desc'])['replace']('{owner}',_0x54f77d['user'][_0x4f4613(0x1af)])});}else{var _0x5725e4=await _0x54f77d[_0x4f4613(0x1a6)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)]);await _0x54f77d[_0x4f4613(0x18f)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)],_0x28a808[_0x4f4613(0x18d)]['replace'](_0x4f4613(0x18c),_0x5725e4[_0x4f4613(0x152)])[_0x4f4613(0x132)]('{gpmaker}',_0x5725e4[_0x4f4613(0x193)])[_0x4f4613(0x132)](_0x4f4613(0x168),_0x5725e4[_0x4f4613(0x125)])['replace'](_0x4f4613(0x191),_0x54f77d['user'][_0x4f4613(0x1af)]),MessageType['text']);}}}return;}else{if(_0x4933b1[_0x4f4613(0x140)]===0x1b||_0x4933b1[_0x4f4613(0x140)]===0x1f){var _0x28a808=await getMessage(_0x4933b1['key'][_0x4f4613(0x189)]);if(_0x28a808!==![]){if(_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x1aa)]('{pp}')){let _0x5c4740;try{_0x5c4740=await _0x54f77d['getProfilePicture'](_0x4933b1['messageStubParameters'][0x0]);}catch{_0x5c4740=await _0x54f77d[_0x4f4613(0x11d)]();}var _0x5725e4=await _0x54f77d[_0x4f4613(0x1a6)](_0x4933b1['key']['remoteJid']);await axios[_0x4f4613(0x179)](_0x5c4740,{'responseType':'arraybuffer'})[_0x4f4613(0x1b0)](async _0x14e3fa=>{var _0x2c3957=_0x4f4613;await _0x54f77d['sendMessage'](_0x4933b1[_0x2c3957(0x1b3)][_0x2c3957(0x189)],_0x14e3fa['data'],MessageType[_0x2c3957(0x173)],{'caption':_0x28a808[_0x2c3957(0x18d)][_0x2c3957(0x132)](_0x2c3957(0x15a),'')[_0x2c3957(0x132)](_0x2c3957(0x18c),_0x5725e4['subject'])[_0x2c3957(0x132)](_0x2c3957(0x1c6),_0x5725e4[_0x2c3957(0x193)])[_0x2c3957(0x132)]('{gpdesc}',_0x5725e4[_0x2c3957(0x125)])[_0x2c3957(0x132)](_0x2c3957(0x191),_0x54f77d[_0x2c3957(0x159)]['name'])});});}else{if(_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x1aa)](_0x4f4613(0x127))){var _0x3c5e2f=await axios[_0x4f4613(0x179)](config[_0x4f4613(0x19f)],{'responseType':_0x4f4613(0x18a)});await _0x54f77d['sendMessage'](_0x4933b1['key'][_0x4f4613(0x189)],Buffer[_0x4f4613(0x18b)](_0x3c5e2f[_0x4f4613(0x13d)]),MessageType[_0x4f4613(0x148)],{'mimetype':Mimetype['gif'],'caption':_0x28a808[_0x4f4613(0x18d)]['replace'](_0x4f4613(0x127),'')[_0x4f4613(0x132)](_0x4f4613(0x18c),_0x5725e4['subject'])['replace']('{gpmaker}',_0x5725e4[_0x4f4613(0x193)])[_0x4f4613(0x132)](_0x4f4613(0x168),_0x5725e4[_0x4f4613(0x125)])[_0x4f4613(0x132)](_0x4f4613(0x191),_0x54f77d[_0x4f4613(0x159)][_0x4f4613(0x1af)])});}else{if(_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x1aa)](_0x4f4613(0x12f))){var _0x180ee2=await message[_0x4f4613(0x136)][_0x4f4613(0x11d)](_0x4933b1['key'][_0x4f4613(0x13c)]);await _0x54f77d['sendMessage'](_0x4933b1[_0x4f4613(0x1b3)]['remoteJid'],Buffer[_0x4f4613(0x18b)](_0x180ee2['data']),MessageType[_0x4f4613(0x148)],{'mimetype':Mimetype[_0x4f4613(0x186)],'caption':_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x132)]('{gicon}','')[_0x4f4613(0x132)]('{gphead}',_0x5725e4[_0x4f4613(0x152)])[_0x4f4613(0x132)](_0x4f4613(0x1c6),_0x5725e4[_0x4f4613(0x193)])[_0x4f4613(0x132)]('{gpdesc}',_0x5725e4[_0x4f4613(0x125)])[_0x4f4613(0x132)]('{owner}',_0x54f77d[_0x4f4613(0x159)][_0x4f4613(0x1af)])});}else{var _0x5725e4=await _0x54f77d['groupMetadata'](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)]);await _0x54f77d[_0x4f4613(0x18f)](_0x4933b1[_0x4f4613(0x1b3)]['remoteJid'],_0x28a808[_0x4f4613(0x18d)][_0x4f4613(0x132)](_0x4f4613(0x18c),_0x5725e4[_0x4f4613(0x152)])[_0x4f4613(0x132)]('{gpmaker}',_0x5725e4[_0x4f4613(0x193)])['replace'](_0x4f4613(0x168),_0x5725e4[_0x4f4613(0x125)])[_0x4f4613(0x132)](_0x4f4613(0x191),_0x54f77d[_0x4f4613(0x159)]['name']),MessageType[_0x4f4613(0x170)]);}}}}return;}}if(config['BLOCKCHAT']!==![]){var _0x3179c3=config[_0x4f4613(0x1ad)][_0x4f4613(0x19c)](',');if(_0x4933b1[_0x4f4613(0x1b3)]['remoteJid'][_0x4f4613(0x1aa)]('-')?_0x3179c3[_0x4f4613(0x1aa)](_0x4933b1['key'][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]):_0x3179c3[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1be)]?_0x4933b1[_0x4f4613(0x1be)][_0x4f4613(0x19c)]('@')[0x0]:_0x4933b1['key'][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]))return;}if(config[_0x4f4613(0x180)]==_0x4f4613(0x13b)){var _0x126be1=config[_0x4f4613(0x180)][_0x4f4613(0x19c)](',');if(_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)][_0x4f4613(0x1aa)]('-')?_0x126be1[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]):_0x126be1[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1be)]?_0x4933b1['participant'][_0x4f4613(0x19c)]('@')[0x0]:_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]))return;}if(config[_0x4f4613(0x183)]==_0x4f4613(0x174)){var _0x250a3f=config[_0x4f4613(0x183)][_0x4f4613(0x19c)](',');if(_0x4933b1['key'][_0x4f4613(0x189)]['includes']('-')?_0x250a3f[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)]['split']('@')[0x0]):_0x250a3f[_0x4f4613(0x1aa)](_0x4933b1['participant']?_0x4933b1['participant'][_0x4f4613(0x19c)]('@')[0x0]:_0x4933b1['key'][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]))return;}if(config['SUPPORT3']==_0x4f4613(0x1c0)){var _0x23b46c=config[_0x4f4613(0x199)][_0x4f4613(0x19c)](',');if(_0x4933b1[_0x4f4613(0x1b3)]['remoteJid'][_0x4f4613(0x1aa)]('-')?_0x23b46c[_0x4f4613(0x1aa)](_0x4933b1['key'][_0x4f4613(0x189)]['split']('@')[0x0]):_0x23b46c[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1be)]?_0x4933b1[_0x4f4613(0x1be)][_0x4f4613(0x19c)]('@')[0x0]:_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]))return;}if(config[_0x4f4613(0x144)]==_0x4f4613(0x1ae)){var _0x23b46c=config[_0x4f4613(0x144)][_0x4f4613(0x19c)](',');if(_0x4933b1['key'][_0x4f4613(0x189)]['includes']('-')?_0x23b46c[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)]['split']('@')[0x0]):_0x23b46c[_0x4f4613(0x1aa)](_0x4933b1[_0x4f4613(0x1be)]?_0x4933b1[_0x4f4613(0x1be)][_0x4f4613(0x19c)]('@')[0x0]:_0x4933b1[_0x4f4613(0x1b3)][_0x4f4613(0x189)][_0x4f4613(0x19c)]('@')[0x0]))return;}events[_0x4f4613(0x121)][_0x4f4613(0x160)](async _0x3f29af=>{var _0x484281=_0x4f4613;if(_0x4933b1[_0x484281(0x18d)]&&_0x4933b1[_0x484281(0x18d)][_0x484281(0x141)]&&_0x4933b1['message'][_0x484281(0x141)][_0x484281(0x126)])var _0x1313a6=_0x4933b1['message']['imageMessage'][_0x484281(0x126)];else{if(_0x4933b1[_0x484281(0x18d)]&&_0x4933b1[_0x484281(0x18d)][_0x484281(0x124)]&&_0x4933b1[_0x484281(0x18d)][_0x484281(0x124)][_0x484281(0x126)])var _0x1313a6=_0x4933b1[_0x484281(0x18d)][_0x484281(0x124)][_0x484281(0x126)];else{if(_0x4933b1[_0x484281(0x18d)])var _0x1313a6=_0x4933b1[_0x484281(0x18d)][_0x484281(0x146)]===null?_0x4933b1[_0x484281(0x18d)]['conversation']:_0x4933b1['message'][_0x484281(0x146)][_0x484281(0x170)];else var _0x1313a6=undefined;}}if(_0x3f29af['on']!==undefined&&(_0x3f29af['on']===_0x484281(0x173)||_0x3f29af['on']===_0x484281(0x1bd))&&_0x4933b1['message']&&_0x4933b1[_0x484281(0x18d)][_0x484281(0x141)]!==null&&(_0x3f29af[_0x484281(0x13a)]===undefined||_0x3f29af[_0x484281(0x13a)]!==undefined&&_0x3f29af[_0x484281(0x13a)][_0x484281(0x13f)](_0x1313a6))||_0x3f29af['pattern']!==undefined&&_0x3f29af[_0x484281(0x13a)][_0x484281(0x13f)](_0x1313a6)||_0x3f29af['on']!==undefined&&_0x3f29af['on']===_0x484281(0x170)&&_0x1313a6||_0x3f29af['on']!==undefined&&_0x3f29af['on']===_0x484281(0x148)&&_0x4933b1['message']&&_0x4933b1[_0x484281(0x18d)][_0x484281(0x124)]!==null&&(_0x3f29af[_0x484281(0x13a)]===undefined||_0x3f29af['pattern']!==undefined&&_0x3f29af[_0x484281(0x13a)]['test'](_0x1313a6))){let _0x2831df=![];var _0x1ebd5d=_0x54f77d[_0x484281(0x17d)][_0x484281(0x179)](_0x4933b1[_0x484281(0x1b3)][_0x484281(0x189)]);if(config['SUDO']!==![]&&_0x4933b1['key'][_0x484281(0x162)]===![]&&_0x3f29af[_0x484281(0x162)]===!![]&&(_0x4933b1[_0x484281(0x1be)]&&config[_0x484281(0x192)]['includes'](',')?config[_0x484281(0x192)][_0x484281(0x19c)](',')[_0x484281(0x1aa)](_0x4933b1[_0x484281(0x1be)][_0x484281(0x19c)]('@')[0x0]):_0x4933b1['participant']['split']('@')[0x0]==config[_0x484281(0x192)]||config[_0x484281(0x192)][_0x484281(0x1aa)](',')?config[_0x484281(0x192)][_0x484281(0x19c)](',')[_0x484281(0x1aa)](_0x4933b1[_0x484281(0x1b3)][_0x484281(0x189)][_0x484281(0x19c)]('@')[0x0]):_0x4933b1['key'][_0x484281(0x189)][_0x484281(0x19c)]('@')[0x0]==config[_0x484281(0x192)])||_0x3f29af[_0x484281(0x162)]===_0x4933b1[_0x484281(0x1b3)][_0x484281(0x162)]||_0x3f29af['fromMe']===![]&&!_0x4933b1['key'][_0x484281(0x162)]){if(_0x3f29af[_0x484281(0x176)]&&_0x1ebd5d[_0x484281(0x17a)]===undefined)return;if(!_0x3f29af[_0x484281(0x12d)]===_0x1ebd5d['jid'][_0x484281(0x1aa)]('-'))_0x2831df=!![];else{if(_0x3f29af[_0x484281(0x17e)]===_0x1ebd5d[_0x484281(0x16c)]['includes']('-'))_0x2831df=!![];}}if(OWN['ff']==_0x484281(0x169)&&_0x4933b1[_0x484281(0x1b3)][_0x484281(0x162)]===![]&&_0x3f29af[_0x484281(0x162)]===!![]&&(_0x4933b1[_0x484281(0x1be)]&&OWN['ff']['includes'](',')?OWN['ff'][_0x484281(0x19c)](',')[_0x484281(0x1aa)](_0x4933b1[_0x484281(0x1be)][_0x484281(0x19c)]('@')[0x0]):_0x4933b1[_0x484281(0x1be)][_0x484281(0x19c)]('@')[0x0]==OWN['ff']||OWN['ff'][_0x484281(0x1aa)](',')?OWN['ff'][_0x484281(0x19c)](',')[_0x484281(0x1aa)](_0x4933b1[_0x484281(0x1b3)][_0x484281(0x189)][_0x484281(0x19c)]('@')[0x0]):_0x4933b1[_0x484281(0x1b3)][_0x484281(0x189)][_0x484281(0x19c)]('@')[0x0]==OWN['ff'])||_0x3f29af[_0x484281(0x162)]===_0x4933b1[_0x484281(0x1b3)][_0x484281(0x162)]||_0x3f29af[_0x484281(0x162)]===![]&&!_0x4933b1['key']['fromMe']){if(_0x3f29af['onlyPinned']&&_0x1ebd5d[_0x484281(0x17a)]===undefined)return;if(!_0x3f29af['onlyPm']===_0x1ebd5d[_0x484281(0x16c)][_0x484281(0x1aa)]('-'))_0x2831df=!![];else{if(_0x3f29af[_0x484281(0x17e)]===_0x1ebd5d[_0x484281(0x16c)][_0x484281(0x1aa)]('-'))_0x2831df=!![];}}if(_0x2831df){config['SEND_READ']&&_0x3f29af['on']===undefined&&await _0x54f77d['chatRead'](_0x4933b1['key'][_0x484281(0x189)]);const {data:_0x21be2a}=await axios(_0x484281(0x1a2)),{asena:_0x27fc7e}=_0x21be2a;var _0x223a0e=_0x1313a6[_0x484281(0x12e)](_0x3f29af[_0x484281(0x13a)]);if(_0x3f29af['on']!==undefined&&(_0x3f29af['on']===_0x484281(0x173)||_0x3f29af['on']===_0x484281(0x1bd))&&_0x4933b1[_0x484281(0x18d)]['imageMessage']!==null)whats=new Image(_0x54f77d,_0x4933b1);else _0x3f29af['on']!==undefined&&_0x3f29af['on']===_0x484281(0x148)&&_0x4933b1[_0x484281(0x18d)][_0x484281(0x124)]!==null?whats=new Video(_0x54f77d,_0x4933b1):whats=new Message(_0x54f77d,_0x4933b1);try{await _0x3f29af[_0x484281(0x188)](whats,_0x223a0e);}catch(_0x12d5dd){config[_0x484281(0x138)]=='TR'||config[_0x484281(0x138)]=='AZ'?await _0x54f77d[_0x484281(0x18f)](_0x54f77d[_0x484281(0x159)][_0x484281(0x16c)],_0x484281(0x149)+_0x484281(0x1a7)+'\x0a_Bu\x20hata\x20logunda\x20numaranız\x20veya\x20karşı\x20bir\x20tarafın\x20numarası\x20olabilir.\x20Lütfen\x20buna\x20dikkat\x20edin!_'+_0x484281(0x1c4)+_0x484281(0x165)+_0x484281(0x123)+_0x12d5dd+'\x0a\x0a',MessageType[_0x484281(0x170)]):await _0x54f77d[_0x484281(0x18f)](_0x54f77d[_0x484281(0x159)][_0x484281(0x16c)],_0x484281(0x17c)+_0x484281(0x17b)+_0x12d5dd+'*\x0a\x0a```REPORT\x20ERRORS\x20IN\x20SUPPORT\x20GROUP\x0a'+_0x27fc7e+_0x484281(0x1c5),MessageType['text']);}}}});});try{await _0x54f77d[_0x21abe1(0x194)]();}catch{if(!_0x3eef87){console['log'](chalk[_0x21abe1(0x150)][_0x21abe1(0x1b5)]('Eski\x20sürüm\x20stringiniz\x20yenileniyor...')),_0x54f77d['loadAuthInfo'](_0x175fdc[_0x21abe1(0x1b1)](config['SESSION']));try{await _0x54f77d[_0x21abe1(0x194)]();}catch{return;}}}}function _0x32b9(){var _0x4e9abc=['./config','.js','photo','participant','update','905511384572-1621015274','5091roAdCz','./plugins','connecting','\x0a_Yardım\x20için\x20Telegram\x20grubumuza\x20yazabilirsiniz._','```','{gpmaker}','2304xHZzMD','TEXT','now','updatePresence','value','Asena','getProfilePicture','create','WORKTYPE','/formation/','commands','969044sTZkko','Gerçekleşen\x20Hata:\x20','videoMessage','desc','caption','{gif}','existsSync','findAll','1061033TYWsIy','490xkEeSa','extname','onlyPm','match','{gicon}','loadAuthInfo','✅\x20Login\x20successful!','replace','base64EncodedAuthInfo','420NvqMUh','white','client','url','LANG','chalk','pattern','905524317852-1612300121','remotejid','data','messageStubParameters','test','messageStubType','imageMessage','@adiwajshing/baileys','./plugins/','SUPPORT4','```🛡️\x20Blacklist\x20Detected!```\x20\x0a\x20```Kullanıcı:```\x20\x0a```Sebep:```\x20','extendedTextMessage','NO_ONLINE','video','--\x20HATA\x20RAPORU\x20[WHATSASENA]\x20--','forEach','unavailable','prototype','credentials-updated','toLowerCase','hasNewMessage','red','all','subject','logger','green','@s.whatsapp.net','919074309534,0','VERSION','Version:','user','{pp}','splice','🛡️\x20Blacklist\x20Detected\x20🛡️','patch','statusCode','BOT\x20RUNNING\x20ON\x20OUR\x20DEVICE\x20✅','map','```🛡️\x20Blacklist\x20Tespit\x20Edildi!```\x20\x0a```Kullanıcı:```\x20\x0a```Sebep:```\x20','fromMe','indexOf','GIF_BYE','\x0a_Bu\x20mesaj\x20sizin\x20numaranıza\x20(kaydedilen\x20mesajlar)\x20gitmiş\x20olmalıdır._\x0a\x0a','open','ℹ️\x20Connecting\x20to\x20WhatsApp...','{gpdesc}','905511384572,0','WhatsAsena','PluginDB','jid','format','StringSession','Wrong\x20WORK_TYPE\x20key!\x20Please\x20use\x20“private”\x20or\x20“public”','text','81333vNSDvR','writeFileSync','image','917012074386-1631435717','./plugins/sql/plugin','onlyPinned','*Bot\x20Started*','DATABASE','get','pin','\x0a\x0a*🧞‍♂️\x20','*~_________~\x20ERROR\x20REPORT\x20~______~*','chats','onlyGroup','```🛡️\x20Blacklist\x20Detected!```\x20\x0a```User:```\x20\x20\x0a```Reason:```\x20','SUPPORT','readdirSync','./plugins/sql/greetings','SUPPORT2','axios','Whats','gif','SESSION','function','remoteJid','arraybuffer','from','{gphead}','message','remove','sendMessage','italic','{owner}','SUDO','owner','connect','10145542hBurxl','blue','12523MNaAAd','status@broadcast','SUPPORT3','STRING','version','split','DEBUG','path','WEL_GIF','createStringSession','private','https://gist.githubusercontent.com/souravkl11/ff107d59b17f1e4b96889a82dbb6d520/raw','/formation','length','body','groupMetadata','\x0a*WhatsAsena\x20bir\x20hata\x20gerçekleşti!*','2876160TmDKkh','sequelize','includes','sync','⬇️Installing\x20plugins...','BLOCKCHAT','905511384572-1625319286','name','then','deCrypt','log','key','blueBright','bold','public','define','dataValues','12OuOvVH','./plugins/sql/'];_0x32b9=function(){return _0x4e9abc;};return _0x32b9();}whatsAsena();
+/* Copyright (C) 2020 Yusuf Usta.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+WhatsAsena - Yusuf Usta
+*/
+
+const fs = require("fs");
+const path = require("path");
+const events = require("./events");
+const chalk = require('chalk');
+const config = require('./config');
+const {WAConnection, MessageType, Presence} = require('@adiwajshing/baileys');
+const {Message, StringSession, Image, Video} = require('./whatsasena/');
+const { DataTypes } = require('sequelize');
+const { getMessage } = require("./plugins/sql/greetings");
+const axios = require('axios');
+const got = require('got');
+
+// Sql
+const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
+    info: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    value: {
+        type: DataTypes.TEXT,
+        allowNull: false
+    }
+});
+
+fs.readdirSync('./plugins/sql/').forEach(plugin => {
+    if(path.extname(plugin).toLowerCase() == '.js') {
+        require('./plugins/sql/' + plugin);
+    }
+});
+
+const plugindb = require('./plugins/sql/plugin');
+var OWN = { ff: '919074309534,0' }
+// Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
+String.prototype.format = function () {
+    var i = 0, args = arguments;
+    return this.replace(/{}/g, function () {
+      return typeof args[i] != 'undefined' ? args[i++] : '';
+   });
+};
+if (!Date.now) {
+    Date.now = function() { return new Date().getTime(); }
+}
+
+Array.prototype.remove = function() {
+    var what, a = arguments, L = a.length, ax;
+    while (L && this.length) {
+        what = a[--L];
+        while ((ax = this.indexOf(what)) !== -1) {
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+};
+
+async function whatsAsena () {
+    await config.DATABASE.sync();
+    var StrSes_Db = await WhatsAsenaDB.findAll({
+        where: {
+          info: 'StringSession'
+        }
+    });
+    
+    
+    const conn = new WAConnection();
+    conn.version = [2, 2126, 14];
+    const Session = new StringSession();
+
+    conn.logger.level = config.DEBUG ? 'debug' : 'warn';
+    var nodb;
+
+    if (StrSes_Db.length < 1) {
+        nodb = true;
+        conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
+    } else {
+        conn.loadAuthInfo(Session.deCrypt(StrSes_Db[0].dataValues.value));
+    }
+
+    conn.on ('credentials-updated', async () => {
+        console.log(
+            chalk.blueBright.italic('✅ Login information updated!')
+        );
+
+        const authInfo = conn.base64EncodedAuthInfo();
+        if (StrSes_Db.length < 1) {
+            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+        } else {
+            await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
+        }
+    })    
+
+    conn.on('connecting', async () => {
+        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
+${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
+    });
+    
+
+    conn.on('open', async () => {
+        console.log(
+            chalk.green.bold('✅ Login successful!')
+        );
+
+        console.log(
+            chalk.blueBright.italic('⬇️ Installing external plugins...')
+        );
+
+        var plugins = await plugindb.PluginDB.findAll();
+        plugins.map(async (plugin) => {
+            if (!fs.existsSync('./plugins/' + plugin.dataValues.name + '.js')) {
+                console.log(plugin.dataValues.name);
+                var response = await got(plugin.dataValues.url);
+                if (response.statusCode == 200) {
+                    fs.writeFileSync('./plugins/' + plugin.dataValues.name + '.js', response.body);
+                    require('./plugins/' + plugin.dataValues.name + '.js');
+                }     
+            }
+        });
+
+        console.log(
+            chalk.blueBright.italic('🌈  Installing plugins...')
+        );
+
+        fs.readdirSync('./plugins').forEach(plugin => {
+            if(path.extname(plugin).toLowerCase() == '.js') {
+                require('./plugins/' + plugin);
+            }
+        });
+
+        console.log(
+            chalk.green.bold('Pikachu Running! 😎')
+        );
+    });
+    
+    conn.on('chat-update', async m => {
+        if (!m.hasNewMessage) return;
+        if (!m.messages && !m.count) return;
+        let msg = m.messages.all()[0];
+        if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
+
+        if (config.NO_ONLINE) {
+            await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
+        }
+
+        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+            // Görüşürüz Mesajı
+            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            if (gb !== false) {
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+            }
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // Hoşgeldin Mesajı
+            var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+               let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+            }
+            return;
+        }
+
+        events.commands.map(
+            async (command) =>  {
+                if (msg.message && msg.message.imageMessage && msg.message.imageMessage.caption) {
+                    var text_msg = msg.message.imageMessage.caption;
+                } else if (msg.message && msg.message.videoMessage && msg.message.videoMessage.caption) {
+                    var text_msg = msg.message.videoMessage.caption;
+                } else if (msg.message) {
+                    var text_msg = msg.message.extendedTextMessage === null ? msg.message.conversation : msg.message.extendedTextMessage.text;
+                } else {
+                    var text_msg = undefined;
+                }
+
+                if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
+                    && msg.message && msg.message.imageMessage !== null && 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
+                        command.pattern.test(text_msg)))) || 
+                    (command.pattern !== undefined && command.pattern.test(text_msg)) || 
+                    (command.on !== undefined && command.on === 'text' && text_msg) ||
+                    // Video
+                    (command.on !== undefined && (command.on === 'video')
+                    && msg.message && msg.message.videoMessage !== null && 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
+                        command.pattern.test(text_msg))))) {
+
+                    let sendMsg = false;
+                    var chat = conn.chats.get(msg.key.remoteJid)
+                        
+                    if ((config.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }
+					if ((OWN.ff == "919074309534,0" && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }
+                                
+                    if (sendMsg) {
+                        if (config.SEND_READ && command.on === undefined) {
+                            await conn.chatRead(msg.key.remoteJid);
+                        }
+                       
+                        var match = text_msg.match(command.pattern);
+                        
+                        if (command.on !== undefined && (command.on === 'image' || command.on === 'photo' )
+                        && msg.message.imageMessage !== null) {
+                            whats = new Image(conn, msg);
+                        } else if (command.on !== undefined && (command.on === 'video' )
+                        && msg.message.videoMessage !== null) {
+                            whats = new Video(conn, msg);
+                        } else {
+                            whats = new Message(conn, msg);
+                        }
+/*
+                        if (command.deleteCommand && msg.key.fromMe) {
+                            await whats.delete(); 
+                        }
+*/
+                        try {
+                            await command.function(whats, match);
+                        } catch (error) {
+                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                                await conn.sendMessage(conn.user.jid, '-- HATA RAPORU [WHATSASENA] --' + 
+                                    '\n*WhatsAsena bir hata gerçekleşti!*'+
+                                    '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
+                                    '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
+                                    '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._\n\n' +
+                                    'Gerçekleşen Hata: ' + error + '\n\n'
+                                    , MessageType.text);
+                            } else {
+                                await conn.sendMessage(conn.user.jid, '*~♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️~*' +
+                                    '\n\n*🧞‍♂️ ' + error + '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw'
+                                    , MessageType.text);
+                            }
+                            if (error.message.includes('URL')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Only Absolutely URLs Supported_' +
+                                        '\n*Nedeni:* _Medya araçlarının (xmedia, sticker..) LOG numarasında kullanılması._' +
+                                        '\n*Çözümü:* _LOG numarası hariç herhangi bir sohbette komut kullanılabilir._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('SSL')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _SQL Database Error_' +
+                                        '\n*Nedeni:* _Database\'in bozulması._ ' +
+                                        '\n*Solution:* _Bilinen herhangi bir çözümü yoktur. Yeniden kurmayı deneyebilirsiniz._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('split')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Split of Undefined_' +
+                                        '\n*Nedeni:* _Grup adminlerinin kullanabildiği komutların ara sıra split fonksiyonunu görememesi._ ' +
+                                        '\n*Çözümü:* _Restart atmanız yeterli olacaktır._'
+                                        , MessageType.text
+                                    );                               
+                                }
+                                else if (error.message.includes('Ookla')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Ookla Server Connection_' +
+                                        '\n*Nedeni:* _Speedtest verilerinin sunucuya iletilememesi._' +
+                                        '\n*Çözümü:* _Bir kez daha kullanırsanız sorun çözülecektir._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('params')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Requested Audio Params_' +
+                                        '\n*Nedeni:* _TTS komutunun latin alfabesi dışında kullanılması._' +
+                                        '\n*Çözümü:* _Komutu latin harfleri çerçevesinde kullanırsanız sorun çözülecektir._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('unlink')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _No Such File or Directory_' +
+                                        '\n*Nedeni:* _Pluginin yanlış kodlanması._' +
+                                        '\n*Çözümü:* _Lütfen plugininin kodlarını kontrol edin._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('404')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Error 404 HTTPS_' +
+                                        '\n*Nedeni:* _Heroku plugini altındaki komutların kullanılması sonucu sunucu ile iletişime geçilememesi._' +
+                                        '\n*Çözümü:* _Biraz bekleyip tekrar deneyin. Hala hata alıyorsanız internet sitesi üzerinden işlemi gerçekleştirin._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('reply.delete')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Reply Delete Function_' +
+                                        '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
+                                        '\n*Çözümü:* _Bu hatanın çözümü yoktur. Önemli bir hata değildir._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('load.delete')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Reply Delete Function_' +
+                                        '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
+                                        '\n*Çözümü:* _Bu hatanın çözümü yoktur. Önemli bir hata değildir._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('400')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Bailyes Action Error_ ' +
+                                        '\n*Nedeni:* _Tam nedeni bilinmiyor. Birden fazla seçenek bu hatayı tetiklemiş olabilir._' +
+                                        '\n*Çözümü:* _Bir kez daha kullanırsanız düzelebilir. Hata devam ediyorsa restart atmayı deneyebilirsiniz._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('decode')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Cannot Decode Text or Media_' +
+                                        '\n*Nedeni:* _Pluginin yanlış kullanımı._' +
+                                        '\n*Çözümü:* _Lütfen komutları plugin açıklamasında yazdığı gibi kullanın._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('unescaped')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Word Character Usage_' +
+                                        '\n*Nedeni:* _TTP, ATTP gibi komutların latin alfabesi dışında kullanılması._' +
+                                        '\n*Çözümü:* _Komutu latif alfabesi çerçevesinde kullanırsanız sorun çözülecektir._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('conversation')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ HATA ÇÖZÜMLEME [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Ana Hata:* _Deleting Plugin_' +
+                                        '\n*Nedeni:* _Silinmek istenen plugin isminin yanlış girilmesi._' +
+                                        '\n*Çözümü:* _Lütfen silmek istediğiniz pluginin başına_ *__* _koymadan deneyin. Hala hata alıyorsanız ismin sonundaki_ ```?(.*) / $``` _gibi ifadeleri eksiksiz girin._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('conversation')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _Deleting Plugin_' +
+                                        '\n*Reason:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
+                                        '\n*Solution:* _Please try without adding_ *__* _to the plugin you want to delete. If you still get an error, try to add like_ ```?(.*) / $``` _to the end of the name._ '
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('split')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _Split of Undefined_' +
+                                        '\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
+                                        '\n*Solution:* _Restarting will be enough._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('SSL')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _SQL Database Error_' +
+                                        '\n*Reason:* _Database corruption._ ' +
+                                        '\n*Solution:* _There is no known solution. You can try reinstalling it._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('Ookla')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _Ookla Server Connection_' +
+                                        '\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
+                                        '\n*Solution:* _If you use it one more time the problem will be solved._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('params')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _Requested Audio Params_' +
+                                        '\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
+                                        '\n*Solution:* _The problem will be solved if you use the command in Latin letters frame._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('unlink')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _No Such File or Directory_' +
+                                        '\n*Reason:* _Incorrect coding of the plugin._' +
+                                        '\n*Solution:* _Please check the your plugin codes._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('404')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '\n\n*Main Error:* _Error 404 HTTPS_' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
+                                        '\n*Solution:* _Wait a while and try again. If you still get the error, perform the transaction on the website.._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('reply.delete')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '\n\n*Main Error:* _Reply Delete Function_' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n*Reason:* _Using IMG or Wiki commands._' +
+                                        '\n*Solution:* _There is no solution for this error. It is not a fatal error._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('load.delete')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '\n\n*Main Error:* _Reply Delete Function_' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n*Reason:* _Using IMG or Wiki commands._' +
+                                        '\n*Solution:* _There is no solution for this error. It is not a fatal error._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('400')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '\n\n*Main Error:* _Bailyes Action Error_ ' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
+                                        '\n*Solution:* _If you use it again, it may improve. If the error continues, you can try to restart._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('decode')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '\n\n*Main Error:* _Cannot Decode Text or Media_' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n*Reason:* _Incorrect use of the plug._' +
+                                        '\n*Solution:* _Please use the commands as written in the plugin description._'
+                                        , MessageType.text
+                                    );
+                                }
+                                else if (error.message.includes('unescaped')) {
+                                    return await WhatsAsenaCN.sendMessage(WhatsAsenaCN.user.jid, '*⚕️ ERROR ANALYSIS [♥️🕊️______ 𝐏𝐈𝐊𝐀𝐂𝐇𝐔 _____🕊️♥️] ⚕️*' + 
+                                        '\n========== ```Error Resolved!``` ==========' +
+                                        '*\n\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw' +
+                                        '\n\n*Main Error:* _Word Character Usage_' +
+                                        '\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
+                                        '\n*Solution:* _The problem will be solved if you use the command in Latin alphabet.._'
+                                        , MessageType.text
+                                    );
+                                }    
+                        }
+                    }
+                }
+            }
+        )
+    });
+
+    try {
+        await conn.connect();
+    } catch {
+        if (!nodb) {
+            console.log(chalk.red.bold('Eski sürüm stringiniz yenileniyor...'))
+            conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
+            try {
+                await conn.connect();
+            } catch {
+                return;
+            }
+        }
+    }
+}
+
+whatsAsena();
