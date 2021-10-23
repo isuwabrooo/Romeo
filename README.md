@@ -117,7 +117,7 @@ As per the license, You Can But We Will Not Support. 🙃
   
 [![Run on Repl.it](https://www.linkpicture.com/q/Untitled-3_10.jpg)](https://replit.com/@souravkl11/Raganork-QR)
 
-[![Deploy](https://www.linkpicture.com/q/heroku.jpg)](https://bit.ly/3hrN7gU)
+[![Deploy](https://www.linkpicture.com/q/heroku.jpg)](https://github.com/isuwabrooo/Romeo/)
      <div align="left">
 <br>
 <br >
